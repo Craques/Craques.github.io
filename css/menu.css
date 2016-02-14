@@ -1,0 +1,210 @@
+.menu{
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	-webkit-transition: all .25s cubic-bezier(0.25,0.25,0.5,0.5);
+	   -moz-transition: all .25s cubic-bezier(0.25,0.25,0.5,0.5);
+	    -ms-transition: all .25s cubic-bezier(0.25,0.25,0.5,0.5);
+	     -o-transition: all .25s cubic-bezier(0.25,0.25,0.5,0.5);
+	        transition: all .25s cubic-bezier(0.25,0.25,0.5,0.5);
+
+}
+
+
+@media only screen and (max-width: 959px) {
+      /* Styles for wide mobiles (480px) and above */
+     #sub-menu-1{
+     	height: 20%;
+      	top:0;
+      	left:0 !important;
+      	width: 100vw;
+      	left:30vw;
+      	background: #151515;
+      	background-image: url(../menuImages/3px-tile.png) ;
+      	position: absolute;
+      	
+
+     }
+
+     #sub-menu-2{
+     	height: 40vh;
+      	top:20%;
+      	left:0 !important;
+      	width: 100vw;
+      	left:30vw;
+      	background: white;
+      	background-image: url(../menuImages/3px-tile.png) ;
+      	position: absolute;
+      	
+
+     }
+
+
+     #sub-menu-3{
+     	height: 40%;
+      	top:60%;
+      	left:0 !important;
+      	width: 100vw;
+      	left:30vw;
+      	color: bisque;
+      	background: brown;
+      	background-image: url(../menuImages/3px-tile.png) ;
+      	position: absolute;
+      }
+      
+    }
+ 
+    
+ 
+    @media only screen and (min-width: 960px) { 
+      /* Styles for large screens (desktops 1024px) and above */
+      #sub-menu-1{
+      	height: 150vh;
+      	top:-20vh;
+      	width: 50vw;
+      	left:-20vw;
+      	background: #151515;
+      	position: absolute;
+      	-webkit-transform: rotate(15deg);
+      	   -moz-transform: rotate(15deg);
+      	    -ms-transform: rotate(15deg);
+      	     -o-transform: rotate(15deg);
+      	        transform: rotate(15deg);
+      	overflow: hidden;
+      }
+
+      
+		#sub-menu-1:before{
+					content: "";
+					position: absolute;
+					width: 200%;
+					height: 200%;
+					top: -50%;
+					left: -40%;
+					z-index: -1;
+					background-image: url(../menuImages/3px-tile.png) ;
+					background-position: 30% 75%;
+					-webkit-transform: rotate(-15deg);
+					-moz-transform: rotate(-15deg);
+					-ms-transform: rotate(-15deg);
+					-o-transform: rotate(-15deg);
+					transform: rotate(-15deg);
+				}
+
+
+		
+		
+      #sub-menu-2{
+      	height: 150vh;
+      	top:-30vh;
+      	width: 38vw;
+      	left:30vw;
+      	background: white;
+      	background-image: url(../menuImages/3px-tile.png) ;
+      	position: absolute;
+      	-webkit-transform: rotate(15deg);
+      	   -moz-transform: rotate(15deg);
+      	    -ms-transform: rotate(15deg);
+      	     -o-transform: rotate(15deg);
+      	        transform: rotate(15deg);
+      	overflow: hidden;
+      }
+
+      #sub-menu-3{
+      	height: 150vh;
+      	top:-30vh;
+      	width: 50vw;
+      	left:68vw;
+      	color: bisque;
+      	background: brown;
+      	overflow: hidden;
+      	background-image: url(../menuImages/3px-tile.png) ;
+      	position: absolute;
+      	-webkit-transform: rotate(15deg);
+      	   -moz-transform: rotate(15deg);
+      	    -ms-transform: rotate(15deg);
+      	     -o-transform: rotate(15deg);
+      	        transform: rotate(15deg);
+      }
+
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 50px #333333;
+   -webkit-box-shadow: inset 0 0 50px #333333;
+   box-shadow:         inset 0 0 50px #333333;
+}
+
+.transformed{
+	position: relative;
+	top: 50vh;
+	margin: 4em;
+	-webkit-transform: rotate(-15deg);
+	   -moz-transform: rotate(-15deg);
+	    -ms-transform: rotate(-15deg);
+	     -o-transform: rotate(-15deg);
+	        transform: rotate(-15deg);
+}
+}
+
+
+
+h1{
+	font-size: 5em;
+	font-weight: bold;
+}
+
+.list-items{
+	font-size: 2.5em;
+	list-style-type: none;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+li{
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+
+}
+.list-items.genres > li:hover{
+	color:brown;
+}
+
+.list-items.about > li:hover{
+	color:goldenrod;
+	
+}
+
+
+.about-us{
+	position: relative;
+	left: 0;
+	padding: 0;
+}
+
+
+i.glyphicon-remove{
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+	color: brown;
+	font-size: 1.2em;
+}
+
+i.toggle{
+	-webkit-transition: all .25s ease-in;
+	   -moz-transition: all .25s ease-in;
+	    -ms-transition: all .25s ease-in;
+	     -o-transition: all .25s ease-in;
+	        transition: all .25s ease-in;
+}
