@@ -97,21 +97,4 @@ float: none;
 	position: relative;
 	top: 3vh;
 }
-.navbar-toggle{
-	font-size: 2em;
-	height: 2em;
-	width: 2em;
-    margin-right: 2em !important;
-    border: 1px white solid;
-    position: relative;
-    color: black;
-    transform: rotate(45deg);
-    background-color: white;
-    top: 1em !important;
-    z-index: 3 !important;
-    -webkit-transition: all .5s ease-in-out;
-       -moz-transition: all .5s ease-in-out;
-        -ms-transition: all .5s ease-in-out;
-         -o-transition: all .5s ease-in-out;
-            transition: all .5s ease-in-out;
-}
+

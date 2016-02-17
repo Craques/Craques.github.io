@@ -18,6 +18,59 @@
 
 @media only screen and (max-width: 959px) {
       /* Styles for wide mobiles (480px) and above */
+	.navbar-toggle{
+		background-color: white;
+		color: black;
+		position: relative;
+		height: 2.5em;
+		width: 2.5em;
+	    top: 0.5em !important;
+	    z-index: 3 !important;
+		-webkit-transform: rotate(45deg);
+		   -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		     -o-transform: rotate(45deg);
+		        transform: rotate(45deg);
+	}
+
+
+
+	h1{
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+
+	.list-items{
+		font-size: 1.5em;
+		list-style-type: none;
+		text-decoration: none;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	li{
+		-webkit-transition: all .5s ease;
+		   -moz-transition: all .5s ease;
+		    -ms-transition: all .5s ease;
+		     -o-transition: all .5s ease;
+		        transition: all .5s ease;
+
+	}
+
+     .navbar-brand
+     {
+		font-size: 1em;
+	    margin-left: 0.5em !important;
+	    border: 4px white solid;
+	    position: relative;
+	    color: white;
+	    top: 0.5em !important;
+	    z-index: 3 !important;
+	}
+
+
+
+
      #sub-menu-1{
      	height: 20%;
       	top:0;
@@ -63,6 +116,28 @@
  
     @media only screen and (min-width: 960px) { 
       /* Styles for large screens (desktops 1024px) and above */
+    .navbar-toggle{
+	font-size: 2em;
+	height: 2em;
+	width: 2em;
+    margin-right: 2em !important;
+    border: 1px white solid;
+    position: relative;
+    color: black;
+    transform: rotate(45deg);
+    background-color: white;
+    top: 1em !important;
+    z-index: 3 !important;
+    -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+
+
+
+
       #sub-menu-1{
       	height: 150vh;
       	top:-20vh;
@@ -149,9 +224,6 @@
 	     -o-transform: rotate(-15deg);
 	        transform: rotate(-15deg);
 }
-}
-
-
 
 h1{
 	font-size: 5em;
@@ -174,6 +246,14 @@ li{
 	        transition: all .5s ease;
 
 }
+
+
+
+
+}
+
+
+
 .list-items.genres > li:hover{
 	color:brown;
 }
