@@ -5,12 +5,57 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>ZOTB</title>
+
+	<!--The loading screen styles-->
+	<style type="text/css">
+			/*!
+	 * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+	 * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+	 * Licensed under MIT
+	 */.load-screen{position:fixed;top:0;left:0;height:100vh;width:100vw;background-color:#141311;z-index:100;overflow:hidden;font-family:Trebuchet MS}brown{color:brown}wheat{color:wheat}.load-logo{z-index:101;position:absolute;color:#fff;top:70%;width:30vw;overflow:hidden;font-size:2em;height:5em;left:50%;text-align:center;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)}.la-ball-clip-rotate-pulse{z-index:101;margin:0 auto;vertical-align:middle;top:50%;transform:translateY(-50%);display:block;font-size:0;color:#fff;width:32px;height:32px}.la-ball-clip-rotate-pulse,.la-ball-clip-rotate-pulse>div{position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.la-ball-clip-rotate-pulse.la-dark{color:#333}.la-ball-clip-rotate-pulse>div{display:inline-block;float:none;background-color:currentColor;border:0 solid currentColor;position:absolute;top:50%;left:50%;border-radius:100%}.la-ball-clip-rotate-pulse>div:first-child{position:absolute;width:32px;height:32px;background:0 0;border-style:solid;border-width:2px;border-right-color:transparent;border-left-color:transparent;-webkit-animation:ball-clip-rotate-pulse-rotate 1s cubic-bezier(.09,.57,.49,.9) infinite;-moz-animation:ball-clip-rotate-pulse-rotate 1s cubic-bezier(.09,.57,.49,.9) infinite;-o-animation:ball-clip-rotate-pulse-rotate 1s cubic-bezier(.09,.57,.49,.9) infinite;animation:ball-clip-rotate-pulse-rotate 1s cubic-bezier(.09,.57,.49,.9) infinite}.la-ball-clip-rotate-pulse>div:last-child{width:16px;height:16px;-webkit-animation:ball-clip-rotate-pulse-scale 1s cubic-bezier(.09,.57,.49,.9) infinite;-moz-animation:ball-clip-rotate-pulse-scale 1s cubic-bezier(.09,.57,.49,.9) infinite;-o-animation:ball-clip-rotate-pulse-scale 1s cubic-bezier(.09,.57,.49,.9) infinite;animation:ball-clip-rotate-pulse-scale 1s cubic-bezier(.09,.57,.49,.9) infinite}.la-ball-clip-rotate-pulse.la-sm{width:16px;height:16px}.la-ball-clip-rotate-pulse.la-sm>div:first-child{width:16px;height:16px;border-width:1px}.la-ball-clip-rotate-pulse.la-sm>div:last-child{width:8px;height:8px}.la-ball-clip-rotate-pulse.la-2x{width:64px;height:64px}.la-ball-clip-rotate-pulse.la-2x>div:first-child{width:64px;height:64px;border-width:4px}.la-ball-clip-rotate-pulse.la-2x>div:last-child{width:32px;height:32px}.la-ball-clip-rotate-pulse.la-3x{width:96px;height:96px}.la-ball-clip-rotate-pulse.la-3x>div:first-child{width:96px;height:96px;border-width:6px}.la-ball-clip-rotate-pulse.la-3x>div:last-child{width:48px;height:48px}@-webkit-keyframes ball-clip-rotate-pulse-rotate{0%{-webkit-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}50%{-webkit-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}100%{-webkit-transform:translate(-50%,-50%) rotate(360deg);transform:translate(-50%,-50%) rotate(360deg)}}@-moz-keyframes ball-clip-rotate-pulse-rotate{0%{-moz-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}50%{-moz-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}100%{-moz-transform:translate(-50%,-50%) rotate(360deg);transform:translate(-50%,-50%) rotate(360deg)}}@-o-keyframes ball-clip-rotate-pulse-rotate{0%{-o-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}50%{-o-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}100%{-o-transform:translate(-50%,-50%) rotate(360deg);transform:translate(-50%,-50%) rotate(360deg)}}@keyframes ball-clip-rotate-pulse-rotate{0%{-webkit-transform:translate(-50%,-50%) rotate(0);-moz-transform:translate(-50%,-50%) rotate(0);-o-transform:translate(-50%,-50%) rotate(0);transform:translate(-50%,-50%) rotate(0)}50%{-webkit-transform:translate(-50%,-50%) rotate(180deg);-moz-transform:translate(-50%,-50%) rotate(180deg);-o-transform:translate(-50%,-50%) rotate(180deg);transform:translate(-50%,-50%) rotate(180deg)}100%{-webkit-transform:translate(-50%,-50%) rotate(360deg);-moz-transform:translate(-50%,-50%) rotate(360deg);-o-transform:translate(-50%,-50%) rotate(360deg);transform:translate(-50%,-50%) rotate(360deg)}}@-webkit-keyframes ball-clip-rotate-pulse-scale{0%,100%{opacity:1;-webkit-transform:translate(-50%,-50%) scale(1);transform:translate(-50%,-50%) scale(1)}30%{opacity:.3;-webkit-transform:translate(-50%,-50%) scale(.15);transform:translate(-50%,-50%) scale(.15)}}@-moz-keyframes ball-clip-rotate-pulse-scale{0%,100%{opacity:1;-moz-transform:translate(-50%,-50%) scale(1);transform:translate(-50%,-50%) scale(1)}30%{opacity:.3;-moz-transform:translate(-50%,-50%) scale(.15);transform:translate(-50%,-50%) scale(.15)}}@-o-keyframes ball-clip-rotate-pulse-scale{0%,100%{opacity:1;-o-transform:translate(-50%,-50%) scale(1);transform:translate(-50%,-50%) scale(1)}30%{opacity:.3;-o-transform:translate(-50%,-50%) scale(.15);transform:translate(-50%,-50%) scale(.15)}}@keyframes ball-clip-rotate-pulse-scale{0%,100%{opacity:1;-webkit-transform:translate(-50%,-50%) scale(1);-moz-transform:translate(-50%,-50%) scale(1);-o-transform:translate(-50%,-50%) scale(1);transform:translate(-50%,-50%) scale(1)}30%{opacity:.3;-webkit-transform:translate(-50%,-50%) scale(.15);-moz-transform:translate(-50%,-50%) scale(.15);-o-transform:translate(-50%,-50%) scale(.15);transform:translate(-50%,-50%) scale(.15)}}
+	</style>
+
+	<script type="text/javascript" >
+	window.addEventListener("load", function() {
+		/* Act on the event */
+		var loadScreen = document.getElementById("load-screen");
+		function doneLoading(){
+       		document.body.removeChild(loadScreen);
+       		clearInterval(delay);
+   		};
+		
+		delay = setInterval(doneLoading, 2000);
+
+	});
+	</script>
+	<!--The Loading screen styling ends-->
+
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/player.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
+
+
+
+<!--The loader begins-->
+	<div class="load-screen" id="load-screen">
+		<div class="la-ball-clip-rotate-pulse la-3x">
+			<div></div>
+			<div></div>
+		</div>
+		<br><br>
+		<div class="load-logo">
+			<p><wheat>Emporor's<wheat> <brown>Production</brown></p>
+		</div>
+	</div>
+
+
+
+
+<!--The navigation bar begins-->
 	<nav class="navbar">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,7 +100,7 @@
 		<div class="col-md-6 col-sm-12 col-xs-12 pull-right playlist">
 			<!--the song template-->
 			<div class="song col-xs-12" data-title="Shalewa" data-artist data-genre="Afrobeat" data-album-art="art/shalewa.jpg">
-				<img src="../music/albumart/images.jpg" class="pull-left album-art">
+				<img src="music/albumart/2.jpg" class="pull-left album-art">
 				<br>
 				<div class="title pull-right text-right col-xs-4">Shalewa</div>
 				<br>
@@ -72,7 +117,7 @@
 	<br/>
 	<hr>
 	<div class="song col-xs-12" data-title={{title}} data-artist={{artist}} data-track = {{track}} data-genre="Afrobeat" data-album-art="art/shalewa.jpg">
-		<img src="../music/albumart/images.jpg" class="pull-left album-art img-responsive"-->
+		<img src="music/albumart/images.jpg" class="pull-left album-art img-responsive"-->
 		<br>
 		<div class="title pull-right text-right col-xs-4">{{title}}</div>
 		<br>
