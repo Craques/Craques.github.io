@@ -13,7 +13,9 @@ body{
     width: 100%;
 }
 .item{
-    height: 100%;
+    height: 100vh !important;
+    width: 100vw !important;
+    position: absolute;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -89,6 +91,31 @@ body{
 }
 
 
+.home {
+    position: fixed;
+    top: 20vh;
+    left: 10vw;
+    z-index: 5100;
+    color: #770E17 !important;
+    width: 7em;
+    border: 2px solid #770E17;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    color: #d9534f;
+    -webkit-transition: all .25s cubic-bezier(0.25,0.50,0.75,0.50);
+       -moz-transition: all .25s cubic-bezier(0.25,0.50,0.75,0.50);
+        -ms-transition: all .25s cubic-bezier(0.25,0.50,0.75,0.50);
+         -o-transition: all .25s cubic-bezier(0.25,0.50,0.75,0.50);
+            transition: all .25s cubic-bezier(0.25,0.50,0.75,0.50);
+}
+
+.home:hover{
+    color:white !important;
+    background-color: #770E17 !important;
+    border: 2px #770f17;
+}
+
+
 
 .item:nth-child(1) {
     background: url("../images/1.jpg") no-repeat center center fixed;
@@ -118,11 +145,4 @@ body{
     position: fixed;
     width: 100%;
     height: 100%;
-}
-.title {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px;
-  text-shadow: 2px 2px #000;
-  color: #FFF;
 }

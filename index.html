@@ -30,14 +30,16 @@
 	</script>
 	<!--The Loading screen styling ends-->
 
-
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/player.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
-
+<div id="dynamic">
+	<!--External content goes here-->
+</div>
 
 
 <!--The loader begins-->
@@ -61,10 +63,9 @@
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-trigger" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
 	        <i class="glyphicon glyphicon-th toggle"></i>
 	      </button>
-	      <a class="navbar-brand" href="#">ZOTB</a>
+	      <a class="navbar-brand" href="#"><div class="temp"></div>ZOTB</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,9 +77,44 @@
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
-	<div class=" row col-centered col-sm-12 player-footer">
+	
 
+
+<div id="wrapper">
+	
+ <!--the Playlist begins-->
+	<div class="container">
+		<div class="col-md-6 col-sm-12 col-xs-12 pull-right playlist">
+			<!--the song template-->
+			<div class="song col-xs-12" data-title="Shalewa" data-artist data-genre="Afrobeat" data-album-art="art/shalewa.jpg">
+				<img src="music/albumart/2.jpg" class="pull-left album-art">
+				<br>
+				<div class="title pull-right text-right col-xs-4">Shalewa</div>
+				<br>
+				<br>
+				<div class="artist pull-right col-xs-4">BeeWhy</div>
+			</div>
+		
+		</div>
+
+
+
+		<div class="col-md-4 col-sm-12 pull-left current-track-image" id="current-track-image">
+			
+		</div>
+	</div>
+	
+	<br>
+	<br>
+	<div class="navigator col-md-6 col-xs-12 pull-right">
+			<wheat id="gallery">Gallery</wheat>
+	</div>
+
+
+<!--The playlist ends-->
+<div class=" row col-centered col-sm-12 player-footer">
 		<audio src="music/raba.mp3" id="mytrack" controls></audio>
+	
 		<div id="defaultBar" class="col-centered">
 			<div id="progressBar" class="col-centered"></div>
 		</div>
@@ -95,27 +131,14 @@
 	<canvas class="background-canvas" id="canvas"> </canvas>
 	<canvas class ="visualiser" id="visualiser"></canvas>
 
-<!--the Playlist begins-->
-	<div class="container"-->
-		<div class="col-md-6 col-sm-12 col-xs-12 pull-right playlist">
-			<!--the song template-->
-			<div class="song col-xs-12" data-title="Shalewa" data-artist data-genre="Afrobeat" data-album-art="art/shalewa.jpg">
-				<img src="music/albumart/2.jpg" class="pull-left album-art">
-				<br>
-				<div class="title pull-right text-right col-xs-4">Shalewa</div>
-				<br>
-				<br>
-				<div class="artist pull-right col-xs-4">BeeWhy</div>
-			</div>
-		</div>
-	</div>
-<!--The playlist ends-->
+
+
+</div>
+
 
 <!--The playlist template-->
 <script id="template" type="text/x-handlebars-template">
 	{{#each this}}
-	<br/>
-	<hr>
 	<div class="song col-xs-12" data-title={{title}} data-artist={{artist}} data-track = {{track}} data-genre="Afrobeat" data-album-art="art/shalewa.jpg">
 		<img src="music/albumart/images.jpg" class="pull-left album-art img-responsive"-->
 		<br>
@@ -124,7 +147,6 @@
 		<br>
 		<div class="artist pull-right col-xs-4">{{artist}}</div>
 	</div>
-	<hr>
     {{/each}}
 </script>
 
@@ -166,5 +188,7 @@
 <script src="js/menu.js"></script>
 <script src="js/handlebars.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/playlist.js"></script>
+<script src="js/carousel.js" type="text/javascript"></script>
+
 </body>
 </html>
